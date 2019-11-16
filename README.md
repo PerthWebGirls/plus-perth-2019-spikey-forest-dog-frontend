@@ -15,5 +15,5 @@ Any code that needs to be changed needs to be fixed
 After it's reviewed it needs to be approved
 Once it's been approved it needs to be merged into master
 # Rules <br>
-No one is allowed to push to master
-No one should work in master ( because if you work in the master branch you will not be nill
+<li>No one is allowed to push to master</li>
+<li>No one should work in master ( because if you work in the master branch you will not be nill<li>
