@@ -17,3 +17,4 @@ Once it's been approved it needs to be merged into master
 # Rules <br>
 <li>No one is allowed to push to master</li>
 <li>No one should work in master ( because if you work in the master branch our history will be nill</li>
+<li>When you are creating a new branch file you will need to be created from master </li>
