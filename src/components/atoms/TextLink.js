@@ -1,8 +1,8 @@
 import React from 'react';
 
-const TextLink = ({link, ...props}) =>{
+const TextLink = (props) =>{
     return(
-    <a href={link}>{props.children}</a>
+    <p>{props.children}</p>
     );
 }
 

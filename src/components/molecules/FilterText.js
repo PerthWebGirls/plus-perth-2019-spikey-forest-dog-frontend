@@ -7,7 +7,10 @@ const FilterText = ({simpIcon, text,link, ...props}) => {
   return (
         <div className="filter">
             <Icon src={simpIcon}/>
-            <TextLink>href={link}>{text}</TextLink>
+            <Link to>
+            <TextLink>Filter</TextLink>
+            </Link>
+            
         </div>
     );
 }

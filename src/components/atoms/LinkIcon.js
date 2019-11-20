@@ -1,8 +1,10 @@
 import React from 'react';
 
-const LinkIcon = ({icon,iconname, link, ...props}) =>{
+const LinkIcon = ({icon,iconname, ...props}) =>{
     return(
-    <a href={link}><img src={icon} alt={iconname} /></a>
+    
+    <img src={icon} alt={iconname}/>
+   
     );
 }
 
