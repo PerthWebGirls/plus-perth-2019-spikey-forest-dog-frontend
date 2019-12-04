@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Route } from 'react-router-dom';
 import Login from '../pages/Login';
+import Home from '../pages/Home';
 import Register from '../pages/Register';
 // import AboutUs from '../pages/AboutUs';
 
@@ -24,6 +25,14 @@ class AppContainer extends Component {
               component={() =>{
                   return(
                       <Register/>
+                  )
+              }}
+              />
+              <Route 
+              path="/"
+              component={() =>{
+                  return(
+                      <Home/>
                   )
               }}
               />
