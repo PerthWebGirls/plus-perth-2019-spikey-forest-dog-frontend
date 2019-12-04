@@ -6,7 +6,7 @@ const FormField = ({name, label, ...props}) => {
   return (
         <div className="form-field">
             <FormLabel name={name}>{label}</FormLabel>
-            <InputField name={name} />
+            <InputField name={name} onChange={props.onChange}/>
         </div>
     );
 }
