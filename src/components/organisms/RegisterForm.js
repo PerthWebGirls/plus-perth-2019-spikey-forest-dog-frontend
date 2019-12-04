@@ -8,10 +8,12 @@ class RegisterForm extends Component{
     constructor(props){
         super(props);
         this.state = {
-            name:``,
+            first_name:``,
+            last_name:``,
+            username:``,
             email:``,
-            password:``,
-            confirmPassword:``
+            password:``
+            // confirmPassword:``
         };
         this.handleChange = this.handleChange.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
@@ -27,13 +29,19 @@ class RegisterForm extends Component{
 handleSubmit(event) {
      event.preventDefault();
      this.setState({alert:true})
-     fetch('https://jsonplaceholder.typicode.com/posts', {
+     const first_name = this.state.first_name;
+     const last_name = this.state.last_name;
+     const email = this.state.email;
+     const username = this.state.username;
+     const password = this.state.password;
+     fetch('http://192.168.43.71:8000/users/', {
        method: 'POST',
        body: JSON.stringify({
-         name: this.setState.name,
-         email: this.state.email,
-         Password: this.state.password,
-         confirmPassword: this.state.confirmPassword,
+         first_name,
+         last_name,
+         username,
+         email,
+         password,
        }),
        headers: {
          'Content-type': 'application/json; charset=UTF-8'
@@ -42,7 +50,7 @@ handleSubmit(event) {
        .then(response => response.json())
        .then(json => {
          console.log(json);
-         this.setState({ name: '',email: '', password: '', confirmPassword:''});
+         this.setState({ first_name: '',last_name: '', email: '', username: '', password: ''});
        })
        .catch(err => {
          console.log(err);
@@ -50,12 +58,14 @@ handleSubmit(event) {
    }
    render(){
        return(
-        <form className="register-form">
-        <FormField type="text" name="name" label="Name" value={this.state.name} onChange={this.handleChange}/>
+        <form  method="POST" className="register-form" onSubmit={this.handleSubmit}>
+        <FormField type="text" name="first_name" label="First Name" value={this.state.first_name} onChange={this.handleChange}/>
+        <FormField type="text" name="last_name" label="Last Name" value={this.state.last_name} onChange={this.handleChange}/>
         <FormField type="text" name="email" label="Email Address" value={this.state.email} onChange={this.handleChange}/>
+        <FormField type="text" name="username" label="Username" value={this.state.username} onChange={this.handleChange}/>
         <FormField type="text" name="password" label="Password" value={this.state.password} onChange={this.handleChange}/>
-        <FormField type="text" name="confirmPassword" label="Confirm Password" value={this.state.confirmPassword} onChange={this.handleChange}/>
-        <Button>Register</Button>
+        {/* <FormField type="text" name="confirmPassword" label="Confirm Password" value={this.state.confirmPassword} onChange={this.handleChange}/> */}
+        <Button type="submit">Register</Button>
         <Link to="/login">
         <TextLink>Already have an account? Login</TextLink>
         </Link>

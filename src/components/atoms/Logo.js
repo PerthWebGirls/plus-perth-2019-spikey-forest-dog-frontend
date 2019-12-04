@@ -1,9 +1,10 @@
-import React from 'react';
+import React from 'react'
+import brand from '../../img/brand.png'
 
-const Logo = ({image, ...props}) =>{
-    return(
-    <img src={image} alt="Logo" />
-    );
-}
+const Logo = ({brand, ...props}) =>{
+    return <img src={brand} alt="Logo" />;
+    
+
+};
 
 export default Logo;
