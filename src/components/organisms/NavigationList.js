@@ -9,9 +9,9 @@ import HamburgerIcon from '../molecules/HamburgerIcon'
 
 const NavigationList = ({simpIcon,title,text, ...props}) => {
   return (
-    <nav className="navbar navbar-expand-lg navbar-light bg-light">
-      <PageTitle className="navbar-brand" title={title}/>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
             <HamburgerIcon />
+            <PageTitle className="navbar-brand" title={title}/>
             <Icon simpIcon={simpIcon}/>
     <div className="collapse navbar-collapse" id="navbarSupportedContent">
     <ul className="navbar-nav">

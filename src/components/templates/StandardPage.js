@@ -4,10 +4,10 @@ import FooterBar from '../atoms/FooterBar'
 import NavigationList from '../organisms/NavigationList'
 
 
-const StandardPage = (props) => {
+const StandardPage = ({title ,simpIcon,...props}) => {
   return (
         <>
-            <NavigationList/>
+            <NavigationList title={title} simpIcon={simpIcon}/>
             <FooterBar/>
         </>
     );
