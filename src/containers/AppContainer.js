@@ -3,6 +3,7 @@ import { Route } from 'react-router-dom';
 import Login from '../pages/Login';
 import Home from '../pages/Home';
 import Register from '../pages/Register';
+import Pets from '../pages/Pets';
 // import AboutUs from '../pages/AboutUs';
 
 
@@ -33,6 +34,15 @@ class AppContainer extends Component {
               component={() =>{
                   return(
                       <Home/>
+                  )
+              }}
+              exact
+              />
+               <Route 
+              path="/pets"
+              component={() =>{
+                  return(
+                      <Pets/>
                   )
               }}
               exact

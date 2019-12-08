@@ -2,7 +2,7 @@ import React from 'react';
 
 const TextBox = props =>{
     return(
-    <p>{props.children}</p>
+    <p>{props.text}</p>
     );
 }
 

@@ -6,7 +6,7 @@ import FilterButtons from '../molecules/FilterButtons'
 const FilterSection = ({simpIcon,link,petimage, ...props}) => {
   return (
         <div className="filter-section">
-            <FilterText text="filter" src={simpIcon}/>
+            <FilterText text="filter" simpIcon={simpIcon}/>
             <FilterButtons/>
         </div>
     );

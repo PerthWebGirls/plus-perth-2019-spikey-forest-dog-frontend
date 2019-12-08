@@ -3,11 +3,11 @@ import TextHeader from '../atoms/TextHeader'
 import TextBox from '../atoms/TextBox'
 
 
-const PetTrait = ({heading, ...props}) => {
+const PetTrait = ({heading,text, ...props}) => {
   return (
-        <div className="pet-trait">
-            <TextHeader>{heading}</TextHeader>
-            <TextBox>{text}</TextBox>
+        <div className="pet-trait col-6">
+            <TextHeader heading={heading}/>
+            <TextBox text={text}/>
         </div>
     );
 }
