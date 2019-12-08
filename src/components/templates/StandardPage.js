@@ -1,14 +1,13 @@
 import React from 'react';
-import Header from '../molecules/Header'
-import FooterBar from '../atoms/FooterBar'
 import NavigationList from '../organisms/NavigationList'
+import { FaSearch } from "react-icons/fa";
 
 
 const StandardPage = ({title ,simpIcon,...props}) => {
   return (
         <>
-            <NavigationList title={title} simpIcon={simpIcon}/>
-            <FooterBar/>
+            <NavigationList title={title} simpIcon={<FaSearch/>}/>
+           
         </>
     );
 }

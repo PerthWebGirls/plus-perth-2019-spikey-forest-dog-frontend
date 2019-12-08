@@ -1,7 +1,9 @@
 import React from 'react';
+import { IoMdMenu } from "react-icons/io";
+import './Span.css'
 
 const Span = (props) => {
-  return <span class="navbar-toggler-icon"></span>;
+  return <IoMdMenu className="navicon"/>;
 };
 
 export default Span;
