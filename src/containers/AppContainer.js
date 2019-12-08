@@ -35,6 +35,7 @@ class AppContainer extends Component {
                       <Home/>
                   )
               }}
+              exact
               />
               </>
           );

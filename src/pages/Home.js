@@ -1,10 +1,25 @@
 import React from 'react';
-import StandardPage from '../components/templates/StandardPage'
+import StandardPage from '../components/templates/StandardPage';
+import FooterBar from '../components/atoms/FooterBar'
+import HeroImage from '../components/atoms/HeroImage';
+import FavouriteImageCarousel from '../components/organisms/FavouriteImageCarousel';
+import FeaturedContent from '../components/organisms/FeaturedContent'
+import './Home.css';
 
-const Login = (props) => {
+const Home = (props) => {
   return (
-      <StandardPage/>
+      <>
+      <StandardPage title="Home"/>
+      <div className="home-content">
+      <HeroImage/>
+      <div className="text-content">
+      <FavouriteImageCarousel />
+      <FeaturedContent />
+      </div>
+      </div>
+      <FooterBar/>
+      </>
     );
 }
 
-export default Login;
+export default Home;

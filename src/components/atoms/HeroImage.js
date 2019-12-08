@@ -1,8 +1,8 @@
 import React from 'react';
 
-const HeroImage = ({hero, ...props}) =>{
+const HeroImage = (props) =>{
     return(
-    <img src={hero} alt="pet-background" />
+    <div className="home-hero"></div>
     );
 }
 
