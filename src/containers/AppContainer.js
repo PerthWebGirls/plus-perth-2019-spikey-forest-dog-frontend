@@ -3,7 +3,7 @@ import { Route } from 'react-router-dom';
 import Login from '../pages/Login';
 import Home from '../pages/Home';
 import Register from '../pages/Register';
-// import AboutUs from '../pages/AboutUs';
+import AboutUs from '../pages/AboutUs';
 
 
 class AppContainer extends Component {
@@ -33,6 +33,14 @@ class AppContainer extends Component {
               component={() =>{
                   return(
                       <Home/>
+                  )
+              }}
+              />
+              <Route 
+              path="/aboutus"
+              component={() =>{
+                  return(
+                      <AboutUs/>
                   )
               }}
               />

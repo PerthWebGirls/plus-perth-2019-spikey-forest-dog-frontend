@@ -1,15 +1,19 @@
 import React from 'react';
-import HeroImage from '../atom/HeroImage'
+import HeroImage from '../atoms/HeroImage'
 import TextHeader from '../atoms/TextHeader'
 import TextBox from '../atoms/TextBox'
 
 const InfoContent = ({heading, text, ...props}) => {
-  return (
-        <div>
+
+  return (  <div>           
             <HeroImage/>
-            <TextHeader>{heading}</TextHeader>
-            <TextBox>{Text}</TextBox>
-        </div>
+            <div className='Header'>
+            <TextHeader heading={heading}/>
+            </div>
+          <div className="text">
+            <TextBox text={text}/>
+           </div>
+           </div>
     );
 }
 
