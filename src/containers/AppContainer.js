@@ -4,7 +4,8 @@ import Login from '../pages/Login';
 import Home from '../pages/Home';
 import Register from '../pages/Register';
 import Pets from '../pages/Pets';
-// import AboutUs from '../pages/AboutUs';
+import Favourites from '../pages/Favourites';
+import Faqs from '../pages/Faqs';
 
 const API_URL = 'https://api.openweathermap.org/data/2.5';
 
@@ -64,6 +65,33 @@ class AppContainer extends Component {
               component={() =>{
                   return(
                       <Pets/>
+                  )
+              }}
+              exact
+              />
+              <Route 
+              path="/favourites"
+              component={() =>{
+                  return(
+                      <Favourites />
+                  )
+              }}
+              exact
+              />
+              <Route 
+              path="/faqs"
+              component={() =>{
+                  return(
+                      <Faqs />
+                  )
+              }}
+              exact
+              />
+              <Route 
+              path="/single-pet"
+              component={() =>{
+                  return(
+                      <SinglePet />
                   )
               }}
               exact

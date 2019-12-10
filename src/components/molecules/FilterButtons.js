@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from '../atoms/Button'
+import './FilterButtons.css'
 
 
 const FilterButtons = ({text, ...props}) => {

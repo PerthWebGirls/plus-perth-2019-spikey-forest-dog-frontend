@@ -1,6 +1,7 @@
 import React from 'react';
 import FilterText from '../molecules/FilterText'
 import FilterButtons from '../molecules/FilterButtons'
+import 'FilterSection.css'
 
 
 const FilterSection = ({simpIcon,link,petimage, ...props}) => {

@@ -1,6 +1,7 @@
 import React from 'react';
 import TextHeader from '../atoms/TextHeader'
 import PetTrait from '../molecules/PetTrait'
+import './Pet.css'
 
 
 const Pet = ({petname,heading,text,petImage, ...props}) => {

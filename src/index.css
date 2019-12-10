@@ -40,30 +40,3 @@ h1, h2, h3, h4, h5, h6{
     margin-left: 6px;
     margin-right: 6px;
 } */
-
-.Traits h3{
-    font-size:15px !important;
-}
-.filter-section{
-    display: flex;
-    flex-direction: column;
-}
-.filter{
-    align-self: flex-end;
-}
-
-.filter-button{
-    align-self: center;
-    margin-bottom: 15px;
-}
-
-.filter-button button{
-    background-color: #339ea5;
-    border: none;
-    border-radius: 25px;
-    padding: 2px;
-    width: 90px;
-    color: white;
-    margin-right: 5px;
-    margin-left: 5px;
-}
