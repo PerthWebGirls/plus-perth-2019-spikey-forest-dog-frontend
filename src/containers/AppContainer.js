@@ -4,6 +4,7 @@ import Login from '../pages/Login';
 import Home from '../pages/Home';
 import Register from '../pages/Register';
 import AboutUs from '../pages/AboutUs';
+import Faqs from '../pages/Faqs'
 
 
 class AppContainer extends Component {
@@ -41,6 +42,14 @@ class AppContainer extends Component {
               component={() =>{
                   return(
                       <AboutUs/>
+                  )
+              }}
+              />
+              <Route 
+              path="/faqs"
+              component={() =>{
+                  return(
+                      <Faqs/>
                   )
               }}
               />
