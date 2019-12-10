@@ -2,7 +2,7 @@ import React from 'react';
 
 const TextHeader = props =>{
     return(
-    <h3>{props.children}</h3>
+    <h3>{props.heading}</h3>
     );
 }
 
