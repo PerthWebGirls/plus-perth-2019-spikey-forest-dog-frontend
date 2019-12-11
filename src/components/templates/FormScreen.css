@@ -1,7 +1,10 @@
 body{
+    background-repeat: no-repeat;
     background-image: linear-gradient(#1E6165, #329EA5, #329EA5);
+    background-color:#329EA5;
     height: 100vh;
     color: white;
+    
 }
 .headings, .login-form, .register-form{
     display: flex;
