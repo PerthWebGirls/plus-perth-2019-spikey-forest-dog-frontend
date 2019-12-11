@@ -79,10 +79,6 @@ p{
   font-size: 15px !important;
 }
 
-/* .featuredText{
-  padding: 12px;
-
-} */
 
 #root > div.home-content > div.text-content > div:nth-child(2) > p{
   align-self: center;
@@ -103,4 +99,8 @@ p{
 
 .pet-name{
   font-size:13px !important;
+}
+
+#all-pets > div > div.Traits.row > div > p{
+  color:#329EA5;
 }
