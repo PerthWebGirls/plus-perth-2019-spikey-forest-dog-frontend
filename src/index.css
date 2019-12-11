@@ -7,3 +7,73 @@ h1, h2, h3, h4, h5, h6{
     font-family: 'Nunito', sans-serif;
 }
 
+.bg-dark{
+    background-color:#329EA5 !important;
+}
+
+
+
+.navbar-dark .navbar-toggler{
+    border:none;
+}
+
+.single-pet-image{
+    background-size:cover;
+    width:150px;
+    height: 200px;
+}
+
+.single-pet-image h3{
+    position: relative;
+    top: 176px;
+    background-color: rgba(255,255,255,0.8);
+    font-size: 20px;
+
+}
+
+.pet-page{
+    background-color: white;
+    color: black;
+}
+
+/* #all-pets > div:nth-child(1) > div.single-pet-image{
+    background-image: url('/img/domestic.jpg') ;
+    background-position: center;
+}
+#all-pets > div:nth-child(2) > div.single-pet-image{
+    background-image: url('/img/golden.jpg') ;
+    background-position: center;
+}
+#all-pets > div:nth-child(3) > div.single-pet-image{
+    background-image: url('/img/wiero.jpeg') ;
+    background-position: center;
+}
+#all-pets > div:nth-child(4) > div.single-pet-image{
+    background-image: url('/img/bunny.jpeg') ;
+    background-position: center;
+}
+#all-pets > div:nth-child(5) > div.single-pet-image{
+    background-image: url('/img/basset.jpeg') ;
+    background-position: center;
+}
+#all-pets > div:nth-child(6) > div.single-pet-image{
+    background-image: url('/img/ragdoll.jpeg') ;
+    background-position: center;
+} */
+
+.single-pet-image h3{
+font-size:15px !important;
+}
+
+#root > div > nav > a{
+    color:white;
+}
+
+#root > div > nav > div:nth-child(3) > svg > path{
+    fill:white;
+    color: white;
+}
+
+#root > div.home-content > div.text-content > div:nth-child(1) > a > p{
+    color:black !important;
+}
