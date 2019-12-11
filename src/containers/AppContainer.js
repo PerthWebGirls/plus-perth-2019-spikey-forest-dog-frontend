@@ -15,6 +15,7 @@ import Favourites from '../pages/Favourites';
 import Faqs from '../pages/Faqs';
 import Account from '../pages/Account';
 import AboutUs from '../pages/AboutUs';
+import Faqs from '../pages/Faqs'
 
 
 class AppContainer extends Component {
@@ -487,7 +488,6 @@ class AppContainer extends Component {
                   )
               }}
               />
-
               </>
           );
     }
