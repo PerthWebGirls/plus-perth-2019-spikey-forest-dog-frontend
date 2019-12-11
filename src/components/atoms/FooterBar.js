@@ -4,4 +4,4 @@ const FooterBar = () =>{
     return <div className="footer"></div>;
 }
 
-export default FormLabel;
+export default FooterBar;

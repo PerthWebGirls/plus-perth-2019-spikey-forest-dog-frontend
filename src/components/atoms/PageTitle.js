@@ -2,7 +2,7 @@ import React from 'react';
 
 const PageTitle = props =>{
     return(
-    <h2>{props.children}</h2>
+    <a>{props.title}</a>
     );
 }
 

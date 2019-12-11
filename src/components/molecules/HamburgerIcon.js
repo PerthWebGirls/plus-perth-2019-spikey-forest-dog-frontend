@@ -2,12 +2,12 @@ import React from 'react';
 import Button from '../atoms/Button'
 import Span from '../atoms/Span'
 
-const Header = ({title, label, ...props}) => {
+const HamburgerIcon = ({title, label, ...props}) => {
   return (
-        <Button className="header">
-           <Span/>
-        </Button>
+        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+           <Span />
+        </button>
     );
 }
 
-export default Header;
+export default HamburgerIcon;
