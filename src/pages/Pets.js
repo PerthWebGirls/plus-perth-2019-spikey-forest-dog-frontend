@@ -5,17 +5,14 @@ import Pet from '../components/organisms/Pet'
 import FilterSection from '../components/organisms/FilterSection'
 import './Home.css';
 
-const Pets = (props) => {
+const Pets = ({onCatClick,onDogClick,onOtherClick,onAllClick, ...props}) => {
   return (
       <div className="pet-page">
       <StandardPage title="Pets"/>
-    <div className="page-content container-fluid">
-    <FilterSection/>
-    <div className="all-pets row">
-    <Pet className="mr-2" heading="Snoopy col"/>
-    <Pet heading="Dooby col"/>
-    <Pet heading="Dabba col"/>
-    <Pet heading="Nabba col"/>
+      <div className="page-content container-fluid">
+     <FilterSection onCatClick={onCatClick} onDogClick={onDogClick} onOtherClick={onOtherClick} onAllClick={onAllClick}/>
+     <div className="all-pets row" id="all-pets">
+  
     </div>
     </div>
       <FooterBar/>

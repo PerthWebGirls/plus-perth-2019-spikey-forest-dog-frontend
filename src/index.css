@@ -35,8 +35,33 @@ h1, h2, h3, h4, h5, h6{
     background-color: white;
     color: black;
 }
+
+
+
 /* 
 .indi-pet{
     margin-left: 6px;
     margin-right: 6px;
 } */
+
+
+#all-pets > div:nth-child(1) > div.single-pet-image{
+    background-image: url('/img/cat-on-coach.jpg') ;
+}
+
+#all-pets > div:nth-child(2) > div.single-pet-image{
+    background-image: url('/img/cat-on-coach.jpg') ;
+}
+
+#all-pets > div:nth-child(3) > div.single-pet-image{
+    background-image: url('/img/cat-on-coach.jpg') ;
+}
+#all-pets > div:nth-child(4) > div.single-pet-image{
+    background-image: url('/img/cat-on-coach.jpg') ;
+}
+#all-pets > div:nth-child(5) > div.single-pet-image{
+    background-image: url('/img/cat-on-coach.jpg') ;
+}
+#all-pets > div:nth-child(6) > div.single-pet-image{
+    background-image: url('/img/cat-on-coach.jpg') ;
+}
