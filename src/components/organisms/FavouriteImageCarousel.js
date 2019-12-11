@@ -13,11 +13,11 @@ const FavouriteImageCarousel = ({heading,link,simpIcon, text, ...props}) => {
           <HomeContentHeader 
           heading="Popular Pets" 
           simpIcon={simpIcon}/>
-          <Link to="/"><TextLink>See All Pets</TextLink></Link> 
-          <div className="carousel">
+          <Link to="/pets"><TextLink>See All Pets</TextLink></Link> 
+          <div className="carousel" id="carousel">
+          {/* <FavouriteImage heading={heading} text={text} />
           <FavouriteImage heading={heading} text={text} />
-          <FavouriteImage heading={heading} text={text} />
-          <FavouriteImage heading={heading} text={text} />
+          <FavouriteImage heading={heading} text={text} /> */}
           </div>
         </div>
     );

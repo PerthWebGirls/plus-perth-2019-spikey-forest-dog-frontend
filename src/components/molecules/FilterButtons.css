@@ -1,0 +1,15 @@
+.filter-button{
+    align-self: center;
+    margin-bottom: 15px;
+}
+
+.filter-button button{
+    background-color: #339ea5;
+    border: none;
+    border-radius: 25px;
+    padding: 2px;
+    width: 74px;
+    color: white;
+    margin-right: 5px;
+    margin-left: 5px;
+}

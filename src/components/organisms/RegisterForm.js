@@ -12,7 +12,7 @@ class RegisterForm extends Component{
             last_name:``,
             username:``,
             email:``,
-            password:``
+            // password:``
             // confirmPassword:``
         };
         this.handleChange = this.handleChange.bind(this);
@@ -33,15 +33,15 @@ handleSubmit(event) {
      const last_name = this.state.last_name;
      const email = this.state.email;
      const username = this.state.username;
-     const password = this.state.password;
-     fetch('http://192.168.43.71:8000/users/', {
+    //  const password = this.state.password;
+     fetch('http://petter-api.herokuapp.com/users/', {
        method: 'POST',
        body: JSON.stringify({
          first_name,
          last_name,
          username,
          email,
-         password,
+        //  password,
        }),
        headers: {
          'Content-type': 'application/json; charset=UTF-8'
@@ -50,7 +50,7 @@ handleSubmit(event) {
        .then(response => response.json())
        .then(json => {
          console.log(json);
-         this.setState({ first_name: '',last_name: '', email: '', username: '', password: ''});
+         this.setState({ first_name: '',last_name: '', email: '', username: ''});
        })
        .catch(err => {
          console.log(err);
@@ -63,7 +63,7 @@ handleSubmit(event) {
         <FormField type="text" name="last_name" label="Last Name" value={this.state.last_name} onChange={this.handleChange}/>
         <FormField type="text" name="email" label="Email Address" value={this.state.email} onChange={this.handleChange}/>
         <FormField type="text" name="username" label="Username" value={this.state.username} onChange={this.handleChange}/>
-        <FormField type="text" name="password" label="Password" value={this.state.password} onChange={this.handleChange}/>
+        {/* <FormField type="text" name="password" label="Password" value={this.state.password} onChange={this.handleChange}/> */}
         {/* <FormField type="text" name="confirmPassword" label="Confirm Password" value={this.state.confirmPassword} onChange={this.handleChange}/> */}
         <Button type="submit">Register</Button>
         <Link to="/login">

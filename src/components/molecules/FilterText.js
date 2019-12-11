@@ -3,13 +3,13 @@ import Icon from '../atoms/Icon'
 import TextLink from '../atoms/TextLink'
 
 
-const FilterText = ({simpIcon, text,link, ...props}) => {
+const FilterText = ({simpIcon, text, ...props}) => {
   return (
         <div className="filter">
-            <Icon src={simpIcon}/>
-            <Link to>
+            <Icon simpIcon={simpIcon}/>
+            {/* <Link> */}
             <TextLink>Filter</TextLink>
-            </Link>
+            {/* </Link> */}
             
         </div>
     );

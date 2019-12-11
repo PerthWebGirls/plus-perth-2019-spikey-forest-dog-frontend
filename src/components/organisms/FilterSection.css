@@ -1,0 +1,7 @@
+.filter-section{
+    display: flex;
+    flex-direction: column;
+}
+.filter{
+    align-self: flex-end;
+}
