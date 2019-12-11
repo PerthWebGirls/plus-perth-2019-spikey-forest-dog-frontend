@@ -2,7 +2,7 @@ import React from 'react';
 
 const NavLink = props =>{
     return(
-        <a className="nav-link">{props.text}</a>
+        <p className="nav-link">{props.text}</p>
     );
 }
 

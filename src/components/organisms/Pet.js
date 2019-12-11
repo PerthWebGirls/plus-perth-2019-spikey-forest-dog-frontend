@@ -7,7 +7,7 @@ import './Pet.css'
 const Pet = ({petname,heading,text,petImage, ...props}) => {
   return (
     <div class="indi-pet col-6">
-        <div className="single-pet-image" style={{ backgroundImage: `url(/img/cat-on-coach.jpg)` }}>
+        <div className="single-pet-image">
             <TextHeader heading={heading}/>
         </div>
         <div className="Traits row">

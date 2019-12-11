@@ -8,7 +8,7 @@ import Icon from '../atoms/Icon'
 
 const PetImage = ({heading,simpIcon, link, icon, iconname, ...props}) => {
   return (
-        <div className="pet-image" style={{ backgroundImage: `url(/img/${petImage}.jpg)` }}>
+        <div className="pet-image">
             <Link to="">
             <LinkIcon icon={icon} iconname={iconname}></LinkIcon>
             </Link>

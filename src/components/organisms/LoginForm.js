@@ -28,7 +28,7 @@ class LoginForm extends Component {
      this.setState({alert:true})
     const username = this.state.username;
     const password = this.state.password;
-    fetch('http://192.168.43.71:8000/api/token/', {
+    fetch(' http://petter-api.herokuapp.com/api/token/', {
       method: 'POST',
       body: JSON.stringify({
         username,
@@ -42,6 +42,7 @@ class LoginForm extends Component {
       .then(json => {
         console.log(json);
         this.setState({ username: '', password: '' });
+        window.location = "/"
       })
       .catch(err => {
         console.log(err);
@@ -52,7 +53,7 @@ class LoginForm extends Component {
       <form method="POST" className="login-form" onSubmit={this.handleSubmit}>
         <FormField type="text" name="username" label="Username" value={this.state.username} onChange={this.handleChange} />
         <FormField type="text" name="password" label="Password" value={this.state.password} onChange={this.handleChange} />
-        <Button type="submit">Login</Button>
+        <Link to="/"><Button type="submit">Login</Button></Link>
         <Link to="/register">
           <TextLink>Don't have an account? Register</TextLink>
         </Link>

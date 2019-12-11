@@ -42,28 +42,28 @@ class AppContainer extends Component {
               var age = value.age;
               var pet_type = value.pet_type;
   
-              var newAnimal = `<div class="indi-pet col-6">
-                              <div class="single-pet-image">
-                                      <h3>${name}</h3>
-                              </div><div class="Traits row">
-                              <div class="pet-trait col-6">
-                                      <h3>Breend</h3>
-                                      <p>${breed}</p>
-                              </div>
-                              <div class="pet-trait col-6">
-                                  <h3>Gender</h3>
-                                  <p>${gender}</p>
-                              </div>
-                              <div class="pet-trait col-6">
-                                  <h3>Age</h3>
-                                  <p>${age}</p>
-                              </div>
-                              <div class="pet-trait col-6">
-                                  <h3>Location</h3>
-                                  <p>${location}</p>
-                              </div>
-                              </div>
-                              </div>`;
+              var newAnimal =  `<div class="indi-pet col-6">
+              <div class="single-pet-image" style="background-image:url('/img/${age}.jpg'); background-size:cover; background-position:center;">
+                      <h3>${name}</h3>
+              </div><div class="Traits row">
+              <div class="pet-trait col-6">
+                      <h3>Breed:</h3>
+                      <p>${breed}</p>
+              </div>
+              <div class="pet-trait col-6">
+                  <h3>Gender:</h3>
+                  <p>${gender}</p>
+              </div>
+              <div class="pet-trait col-6">
+                  <h3>Age</h3>
+                  <p>${age}</p>
+              </div>
+              <div class="pet-trait col-6">
+                  <h3>Location</h3>
+                  <p>${location}</p>
+              </div>
+              </div>
+              </div>`;
               if(pet_type === "cat"){
                 div.innerHTML += newAnimal
               }
@@ -103,30 +103,30 @@ class AppContainer extends Component {
               var age = value.age;
               var pet_type = value.pet_type;
               var newAnimal = `<div class="indi-pet col-6">
-                              <div class="single-pet-image">
-                                      <h3>${name}</h3>
-                              </div><div class="Traits row">
-                              <div class="pet-trait col-6">
-                                      <h3>Breend</h3>
-                                      <p>${breed}</p>
-                              </div>
-                              <div class="pet-trait col-6">
-                                  <h3>Gender</h3>
-                                  <p>${gender}</p>
-                              </div>
-                              <div class="pet-trait col-6">
-                                  <h3>Age</h3>
-                                  <p>${age}</p>
-                              </div>
-                              <div class="pet-trait col-6">
-                                  <h3>Location</h3>
-                                  <p>${location}</p>
-                              </div>
-                              </div>
-                              </div>`;
-                div.innerHTML += newAnimal
-              // $('#all-pets').append(newAnimal);
-                  // document.getElementById("all-pets").appendChild(newAnimal);
+              <div class="single-pet-image" style="background-image:url('/img/${age}.jpg'); background-size:cover; background-position:center;">
+                      <h3>${name}</h3>
+              </div><div class="Traits row">
+              <div class="pet-trait col-6">
+                      <h3>Breed:</h3>
+                      <p>${breed}</p>
+              </div>
+              <div class="pet-trait col-6">
+                  <h3>Gender:</h3>
+                  <p>${gender}</p>
+              </div>
+              <div class="pet-trait col-6">
+                  <h3>Age</h3>
+                  <p>${age}</p>
+              </div>
+              <div class="pet-trait col-6">
+                  <h3>Location</h3>
+                  <p>${location}</p>
+              </div>
+              </div>
+              </div>`;
+
+                div.innerHTML += newAnimal;
+              
   
   
   
@@ -137,6 +137,8 @@ class AppContainer extends Component {
           console.log(err);
         });
     };
+
+
     handleDogChange(){
         var div = document.getElementById('all-pets');
         div.innerHTML = "";
@@ -158,28 +160,28 @@ class AppContainer extends Component {
               var pet_type = value.pet_type;
         
   
-              var newAnimal = `<div class="indi-pet col-6">
-                              <div class="single-pet-image">
-                                      <h3>${name}</h3>
-                              </div><div class="Traits row">
-                              <div class="pet-trait col-6">
-                                      <h3>Breend</h3>
-                                      <p>${breed}</p>
-                              </div>
-                              <div class="pet-trait col-6">
-                                  <h3>Gender</h3>
-                                  <p>${gender}</p>
-                              </div>
-                              <div class="pet-trait col-6">
-                                  <h3>Age</h3>
-                                  <p>${age}</p>
-                              </div>
-                              <div class="pet-trait col-6">
-                                  <h3>Location</h3>
-                                  <p>${location}</p>
-                              </div>
-                              </div>
-                              </div>`;
+              var newAnimal =  `<div class="indi-pet col-6">
+              <div class="single-pet-image" style="background-image:url('/img/${age}.jpg'); background-size:cover; background-position:center;">
+                      <h3>${name}</h3>
+              </div><div class="Traits row">
+              <div class="pet-trait col-6">
+                      <h3>Breed:</h3>
+                      <p>${breed}</p>
+              </div>
+              <div class="pet-trait col-6">
+                  <h3>Gender:</h3>
+                  <p>${gender}</p>
+              </div>
+              <div class="pet-trait col-6">
+                  <h3>Age</h3>
+                  <p>${age}</p>
+              </div>
+              <div class="pet-trait col-6">
+                  <h3>Location</h3>
+                  <p>${location}</p>
+              </div>
+              </div>
+              </div>`;
               if(pet_type === "dog"){
                 div.innerHTML += newAnimal
               }
@@ -187,10 +189,6 @@ class AppContainer extends Component {
                   div.innerHTML += "";
               }
              
-              // $('#all-pets').append(newAnimal);
-                  // document.getElementById("all-pets").appendChild(newAnimal);
-  
-  
   
           });
   
@@ -220,40 +218,34 @@ class AppContainer extends Component {
               var pet_type = value.pet_type;
           
   
-              var newAnimal = `<div class="indi-pet col-6">
-                              <div class="single-pet-image">
-                                      <h3>${name}</h3>
-                              </div><div class="Traits row">
-                              <div class="pet-trait col-6">
-                                      <h3>Breend</h3>
-                                      <p>${breed}</p>
-                              </div>
-                              <div class="pet-trait col-6">
-                                  <h3>Gender</h3>
-                                  <p>${gender}</p>
-                              </div>
-                              <div class="pet-trait col-6">
-                                  <h3>Age</h3>
-                                  <p>${age}</p>
-                              </div>
-                              <div class="pet-trait col-6">
-                                  <h3>Location</h3>
-                                  <p>${location}</p>
-                              </div>
-                              </div>
-                              </div>`;
+              var newAnimal =  `<div class="indi-pet col-6">
+              <div class="single-pet-image" style="background-image:url('/img/${age}.jpg'); background-size:cover; background-position:center;">
+                      <h3>${name}</h3>
+              </div><div class="Traits row">
+              <div class="pet-trait col-6">
+                      <h3>Breed:</h3>
+                      <p>${breed}</p>
+              </div>
+              <div class="pet-trait col-6">
+                  <h3>Gender:</h3>
+                  <p>${gender}</p>
+              </div>
+              <div class="pet-trait col-6">
+                  <h3>Age</h3>
+                  <p>${age}</p>
+              </div>
+              <div class="pet-trait col-6">
+                  <h3>Location</h3>
+                  <p>${location}</p>
+              </div>
+              </div>
+              </div>`;
               if(pet_type != "dog" && pet_type != "cat"){
                 div.innerHTML += newAnimal
               }
               else{
                   div.innerHTML += "";
               }
-             
-              // $('#all-pets').append(newAnimal);
-                  // document.getElementById("all-pets").appendChild(newAnimal);
-  
-  
-  
           });
   
         })
@@ -282,15 +274,15 @@ class AppContainer extends Component {
           
   
               var newAnimal = `<div class="indi-pet col-6">
-                              <div class="single-pet-image">
+                              <div class="single-pet-image" style="background-image:url('/img/${age}.jpg'); background-size:cover; background-position:center;">
                                       <h3>${name}</h3>
                               </div><div class="Traits row">
                               <div class="pet-trait col-6">
-                                      <h3>Breend</h3>
+                                      <h3>Breed:</h3>
                                       <p>${breed}</p>
                               </div>
                               <div class="pet-trait col-6">
-                                  <h3>Gender</h3>
+                                  <h3>Gender:</h3>
                                   <p>${gender}</p>
                               </div>
                               <div class="pet-trait col-6">
@@ -306,6 +298,44 @@ class AppContainer extends Component {
   
               var div = document.getElementById('all-pets');
               div.innerHTML += newAnimal;
+  
+  
+          });
+  
+        })
+        .catch(err => {
+          console.log(err);
+        });
+ }
+
+ getAllPetsHome(){
+    fetch('http://localhost:8000/pets/', {
+        method: 'GET',
+        headers: {
+          'Content-type': 'application/json; charset=UTF-8'
+        }
+      })
+        .then(response => response.json())
+        .then(data => {
+          let allpets = data;
+          console.log(allpets)
+
+          
+
+          allpets.forEach(function(value){
+              var name = value.name;
+              var breed = value.breeds_display;
+              var age = value.age
+        
+          
+  
+              var newAnimal = `<div class="favourite-image" style="background-image:url('/img/${age}.jpg'); background-size:cover; background-position:center;"> <h3 class="pet-name">${name}</h3><p class="pet-breed">${breed}</p></div>`;
+  
+              var div = document.getElementById('carousel');
+              if(age>6){
+                div.innerHTML += newAnimal;
+              }
+              
               // $('#all-pets').append(newAnimal);
                   // document.getElementById("all-pets").appendChild(newAnimal);
   
@@ -320,7 +350,9 @@ class AppContainer extends Component {
  }
 
       componentDidMount() {
-        this.getAllPets();
+        window.addEventListener('load', this.getAllPets());
+        window.addEventListener('load', this.getAllPetsHome());
+        
 
     //   function changePage(){
 

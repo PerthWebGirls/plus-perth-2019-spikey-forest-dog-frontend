@@ -26,8 +26,6 @@
 
 
   #root > div.home-content > div.text-content > div:nth-child(1) > div.carousel > div:nth-child(2){
-    background: url('/img/cat-on-coach.jpg');
-    background-size:cover;
     height:150px;
     width:150px;
     border-radius: 5px;
@@ -35,8 +33,6 @@
 
   }
   #root > div.home-content > div.text-content > div:nth-child(1) > div.carousel > div:nth-child(1){
-    background: url('/img/cat-on-coach.jpg');
-    background-size:cover;
     height:150px;
     width:150px;
     border-radius: 5px;
@@ -44,23 +40,13 @@
 
   }
   #root > div.home-content > div.text-content > div:nth-child(1) > div.carousel > div:nth-child(3){
-    background: url('/img/cat-on-coach.jpg');
-    background-size:cover;
     height:150px;
     width:150px;
     border-radius: 5px;
     background-position: top;
 
   }
-  #root > div.home-content > div.text-content > div:nth-child(1) > div.carousel > div:nth-child(4){
-    background: url('/img/cat-on-coach.jpg');
-    background-size:cover;
-    height:150px;
-    width:150px;
-    border-radius: 5px;
-    background-position: top;
 
-  }
   #root > div.home-content > div.text-content > div:nth-child(1) > a > p{
     align-self:flex-end;
   }
@@ -81,7 +67,7 @@
     align-items: center;
     flex-direction: row;
   }
-img{
+.featured > img{
   width: 100px;
   height: 100px;
   margin-right: 5px;
@@ -101,4 +87,20 @@ p{
 #root > div.home-content > div.text-content > div:nth-child(2) > p{
   align-self: center;
   margin-top: -16px;
+}
+
+.favourite-image h3{
+  background-color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  top:110px !important;
+
+}
+.pet-breed{
+  background-color: rgba(255, 255, 255, 0.7);
+  position: relative;
+  top:100px;
+}
+
+.pet-name{
+  font-size:13px !important;
 }
