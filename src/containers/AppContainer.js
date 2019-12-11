@@ -25,7 +25,7 @@ class AppContainer extends Component {
     handlePetChange(){
         var div = document.getElementById('all-pets');
         div.innerHTML = "";
-        fetch('http://localhost:8000/pets/', {
+        fetch('https://petter-api.herokuapp.com/pets/', {
         method: 'GET',
         headers: {
           'Content-type': 'application/json; charset=UTF-8'
@@ -86,7 +86,7 @@ class AppContainer extends Component {
     handleAllChange(){
         var div = document.getElementById('all-pets');
         div.innerHTML = "";
-        fetch('http://localhost:8000/pets/', {
+        fetch('https://petter-api.herokuapp.com/pets/', {
         method: 'GET',
         headers: {
           'Content-type': 'application/json; charset=UTF-8'
@@ -142,7 +142,7 @@ class AppContainer extends Component {
     handleDogChange(){
         var div = document.getElementById('all-pets');
         div.innerHTML = "";
-        fetch('http://localhost:8000/pets/', {
+        fetch('https://petter-api.herokuapp.com/pets/', {
         method: 'GET',
         headers: {
           'Content-type': 'application/json; charset=UTF-8'
@@ -200,7 +200,7 @@ class AppContainer extends Component {
     handleOtherChange(){
         var div = document.getElementById('all-pets');
         div.innerHTML = "";
-        fetch('http://localhost:8000/pets/', {
+        fetch('https://petter-api.herokuapp.com/pets/', {
         method: 'GET',
         headers: {
           'Content-type': 'application/json; charset=UTF-8'
@@ -255,7 +255,7 @@ class AppContainer extends Component {
     };
 
  getAllPets(){
-    fetch('http://localhost:8000/pets/', {
+    fetch('https://petter-api.herokuapp.com/pets/', {
         method: 'GET',
         headers: {
           'Content-type': 'application/json; charset=UTF-8'
@@ -309,7 +309,7 @@ class AppContainer extends Component {
  }
 
  getAllPetsHome(){
-    fetch('http://localhost:8000/pets/', {
+    fetch('https://petter-api.herokuapp.com/pets/', {
         method: 'GET',
         headers: {
           'Content-type': 'application/json; charset=UTF-8'
